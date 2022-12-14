@@ -5,6 +5,7 @@ public class MergedArrays {
 
         System.out.println("Hello");
         System.out.println("Created Git repository");
+        System.out.println("Created GitHub remote repository");
 
     }
 }
