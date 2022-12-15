@@ -1,11 +1,29 @@
-package day01;
+import java.util.Arrays;
 
 public class MergedArrays {
+
     public static void main(String[] args) {
 
-        System.out.println("Hello");
-        System.out.println("Created Git repository");
-        System.out.println("Created GitHub remote repository");
+        int[] arr1 = {1, 2, 3, 4};
+        int[] arr2 = {5, 6, 7, 8};
 
+        int[] arr3 = merge(arr1, arr2);
+
+        System.out.println(Arrays.toString(arr3));
+    }
+
+    public static int[] merge(int[] arr1, int[] arr2) {
+
+        int[] result = new int[arr1.length + arr2.length];
+
+        int i = 0; // index numbers of the result array
+        for (int each : arr1) {
+            result[i++] = each;
+        }
+        for (int each : arr2) {
+            result[i++] = each;
+        }
+
+        return result;
     }
 }
